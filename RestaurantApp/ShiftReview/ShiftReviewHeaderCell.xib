@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad10_2" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="58" id="KGk-i7-Jjw" customClass="ShiftReviewHeaderCell" customModule="RestaurantApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="726" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="726" height="55"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D2d-sb-a21">
+                        <rect key="frame" x="0.0" y="0.0" width="726" height="55"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Employee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecJ-3o-9HC">
+                                <rect key="frame" x="50" y="15" width="100" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="45D-ef-Qgk"/>
+                                    <constraint firstAttribute="width" constant="100" id="yY8-Xl-vyG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cash On Hand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dE-TD-SbF">
+                                <rect key="frame" x="439" y="15" width="122" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="Ffw-h3-8Dj"/>
+                                    <constraint firstAttribute="width" constant="122" id="Jfs-Fs-iyc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Non Cash Tips" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGh-SJ-NFj">
+                                <rect key="frame" x="586" y="15" width="120" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="T7c-KU-uoK"/>
+                                    <constraint firstAttribute="height" constant="25" id="wra-74-UBf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total payments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytQ-dO-SOv">
+                                <rect key="frame" x="284" y="15" width="130" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="6Ap-S6-VbH"/>
+                                    <constraint firstAttribute="width" constant="130" id="zam-vT-lC3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88890665769999999" green="0.91308742759999995" blue="0.93432241680000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LGh-SJ-NFj" firstAttribute="leading" secondItem="0dE-TD-SbF" secondAttribute="trailing" constant="25" id="AOy-Yl-eTS"/>
+                            <constraint firstItem="ecJ-3o-9HC" firstAttribute="centerY" secondItem="D2d-sb-a21" secondAttribute="centerY" id="BOc-Hf-ELe"/>
+                            <constraint firstAttribute="trailing" secondItem="LGh-SJ-NFj" secondAttribute="trailing" constant="20" id="R5K-Uz-if9"/>
+                            <constraint firstItem="ytQ-dO-SOv" firstAttribute="centerY" secondItem="D2d-sb-a21" secondAttribute="centerY" id="cuS-X0-wGj"/>
+                            <constraint firstItem="ecJ-3o-9HC" firstAttribute="leading" secondItem="D2d-sb-a21" secondAttribute="leading" constant="50" id="eWx-o4-K4G"/>
+                            <constraint firstItem="LGh-SJ-NFj" firstAttribute="centerY" secondItem="D2d-sb-a21" secondAttribute="centerY" id="gkC-AM-gnk"/>
+                            <constraint firstItem="0dE-TD-SbF" firstAttribute="leading" secondItem="ytQ-dO-SOv" secondAttribute="trailing" constant="25" id="v9K-1q-fzT"/>
+                            <constraint firstItem="0dE-TD-SbF" firstAttribute="centerY" secondItem="D2d-sb-a21" secondAttribute="centerY" id="yWm-3H-lcL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="D2d-sb-a21" secondAttribute="trailing" id="OkV-Nw-UKo"/>
+                    <constraint firstItem="D2d-sb-a21" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Tka-8w-hJb"/>
+                    <constraint firstAttribute="bottom" secondItem="D2d-sb-a21" secondAttribute="bottom" id="cBp-9n-87l"/>
+                    <constraint firstItem="D2d-sb-a21" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="gf1-Le-7ao"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="321" y="212"/>
+        </tableViewCell>
+    </objects>
+</document>

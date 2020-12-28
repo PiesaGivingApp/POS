@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad10_2" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ListCollectionCell" customModule="RestaurantApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="155" height="155"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="155" height="155"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MWA-v2-wb3">
+                        <rect key="frame" x="5" y="5" width="145" height="145"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pAj-JU-U6K">
+                                <rect key="frame" x="50" y="15" width="45" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="86N-dL-sil"/>
+                                    <constraint firstAttribute="height" constant="50" id="oCi-4M-rWg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelLabelLabelLabelabellbelLabelabellbel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="818-Sn-qoV">
+                                <rect key="frame" x="12" y="73" width="121" height="67"/>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="15"/>
+                                <color key="textColor" red="0.1843137255" green="0.2470588235" blue="0.36470588240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="818-Sn-qoV" firstAttribute="top" secondItem="pAj-JU-U6K" secondAttribute="bottom" constant="8" id="JI0-9u-e2K"/>
+                            <constraint firstItem="818-Sn-qoV" firstAttribute="centerX" secondItem="pAj-JU-U6K" secondAttribute="centerX" id="UCZ-AH-iUu"/>
+                            <constraint firstAttribute="bottom" secondItem="818-Sn-qoV" secondAttribute="bottom" constant="5" id="WrT-6w-NVZ"/>
+                            <constraint firstItem="818-Sn-qoV" firstAttribute="leading" secondItem="MWA-v2-wb3" secondAttribute="leading" constant="12" id="ZPJ-L7-Tvf"/>
+                            <constraint firstItem="pAj-JU-U6K" firstAttribute="top" secondItem="MWA-v2-wb3" secondAttribute="top" constant="15" id="pJJ-L5-yKn"/>
+                            <constraint firstAttribute="trailing" secondItem="818-Sn-qoV" secondAttribute="trailing" constant="12" id="rp7-e3-8e2"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="MWA-v2-wb3" secondAttribute="bottom" constant="5" id="CbM-uK-AOv"/>
+                <constraint firstAttribute="trailing" secondItem="MWA-v2-wb3" secondAttribute="trailing" constant="5" id="Ukq-gg-wFu"/>
+                <constraint firstItem="MWA-v2-wb3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="dnu-S7-PRk"/>
+                <constraint firstItem="MWA-v2-wb3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="znu-X0-W13"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="131" height="138"/>
+            <connections>
+                <outlet property="backView" destination="MWA-v2-wb3" id="C2l-6w-84c"/>
+                <outlet property="iconImageView" destination="pAj-JU-U6K" id="jME-Zu-YIi"/>
+                <outlet property="nameLabel" destination="818-Sn-qoV" id="J7P-fF-iwc"/>
+            </connections>
+            <point key="canvasLocation" x="154.16666666666666" y="185.18518518518516"/>
+        </collectionViewCell>
+    </objects>
+</document>

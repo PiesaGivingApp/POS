@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-SemiBold.otf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SideMenuCollectionViewCell" id="gTV-IL-0wX" customClass="SideMenuCollectionViewCell" customModule="RestaurantApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KVZ-wO-brL">
+                        <rect key="frame" x="5" y="5" width="75" height="75"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Trl-jM-DR2">
+                                <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                <color key="backgroundColor" red="0.21568627450980393" green="0.29411764705882354" blue="0.44313725490196076" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dish" translatesAutoresizingMaskIntoConstraints="NO" id="eKq-L4-b7x">
+                                <rect key="frame" x="20" y="5" width="35" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="LJD-p6-Bl9"/>
+                                    <constraint firstAttribute="height" constant="25" id="Ucz-Jz-8FP"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelLabelLabelLabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hn9-iZ-aaS">
+                                <rect key="frame" x="5" y="35" width="65" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="7Ma-tR-Stj"/>
+                                    <constraint firstAttribute="width" constant="65" id="SHa-f8-Gka"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="11"/>
+                                <color key="textColor" red="0.65098039215686276" green="0.75686274509803919" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Trl-jM-DR2" firstAttribute="leading" secondItem="KVZ-wO-brL" secondAttribute="leading" id="3WJ-Xq-2QF"/>
+                            <constraint firstItem="Hn9-iZ-aaS" firstAttribute="leading" secondItem="KVZ-wO-brL" secondAttribute="leading" constant="5" id="74W-qG-ueD"/>
+                            <constraint firstAttribute="trailing" secondItem="Hn9-iZ-aaS" secondAttribute="trailing" constant="5" id="Iy2-Pj-lxz"/>
+                            <constraint firstAttribute="trailing" secondItem="Trl-jM-DR2" secondAttribute="trailing" id="Mh7-r7-bLN"/>
+                            <constraint firstItem="eKq-L4-b7x" firstAttribute="top" secondItem="KVZ-wO-brL" secondAttribute="top" constant="5" id="QUA-np-xQ6"/>
+                            <constraint firstItem="Trl-jM-DR2" firstAttribute="top" secondItem="KVZ-wO-brL" secondAttribute="top" id="Ry1-V0-n1r"/>
+                            <constraint firstAttribute="bottom" secondItem="Trl-jM-DR2" secondAttribute="bottom" id="Uq6-Ct-VqC"/>
+                            <constraint firstItem="Hn9-iZ-aaS" firstAttribute="top" secondItem="eKq-L4-b7x" secondAttribute="bottom" constant="5" id="VYv-9n-bBw"/>
+                            <constraint firstItem="eKq-L4-b7x" firstAttribute="centerX" secondItem="KVZ-wO-brL" secondAttribute="centerX" id="c2o-my-oNZ"/>
+                            <constraint firstAttribute="bottom" secondItem="Hn9-iZ-aaS" secondAttribute="bottom" constant="5" id="pgG-ir-f3l"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="KVZ-wO-brL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="9bO-3j-27d"/>
+                <constraint firstAttribute="bottom" secondItem="KVZ-wO-brL" secondAttribute="bottom" constant="5" id="qBK-Zd-aYp"/>
+                <constraint firstAttribute="trailing" secondItem="KVZ-wO-brL" secondAttribute="trailing" constant="5" id="wTR-wK-uyT"/>
+                <constraint firstItem="KVZ-wO-brL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="zER-DO-xFr"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="120" height="118"/>
+            <connections>
+                <outlet property="backImageView" destination="Trl-jM-DR2" id="IcH-D6-6ux"/>
+                <outlet property="backView" destination="KVZ-wO-brL" id="ctj-Wz-wjd"/>
+                <outlet property="sideMenuImag" destination="eKq-L4-b7x" id="mN7-CY-qqA"/>
+                <outlet property="sideMenuNameLbl" destination="Hn9-iZ-aaS" id="APd-tj-lF3"/>
+            </connections>
+            <point key="canvasLocation" x="181.8840579710145" y="147.65625"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="dish" width="64" height="64"/>
+    </resources>
+</document>

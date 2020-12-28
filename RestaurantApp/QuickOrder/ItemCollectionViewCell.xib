@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.otf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ItemCollectionViewCell" customModule="RestaurantApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5F6-qi-Xno">
+                        <rect key="frame" x="5" y="5" width="140" height="90"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buttonWhiteBg" translatesAutoresizingMaskIntoConstraints="NO" id="Bmj-Cg-zb8">
+                                <rect key="frame" x="0.0" y="0.0" width="140" height="90"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJq-IJ-if3">
+                                <rect key="frame" x="5" y="5" width="130" height="80"/>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                                <color key="textColor" red="0.18431372549019609" green="0.24705882352941178" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oJq-IJ-if3" firstAttribute="leading" secondItem="5F6-qi-Xno" secondAttribute="leading" constant="5" id="3IS-VP-Mu6"/>
+                            <constraint firstItem="Bmj-Cg-zb8" firstAttribute="top" secondItem="5F6-qi-Xno" secondAttribute="top" id="4kf-h9-G2T"/>
+                            <constraint firstAttribute="bottom" secondItem="Bmj-Cg-zb8" secondAttribute="bottom" id="IFT-i8-rNk"/>
+                            <constraint firstAttribute="trailing" secondItem="oJq-IJ-if3" secondAttribute="trailing" constant="5" id="KLF-24-Zi0"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="NYO-A1-8QO"/>
+                            <constraint firstAttribute="width" constant="140" id="vyP-yn-GoP"/>
+                            <constraint firstItem="Bmj-Cg-zb8" firstAttribute="leading" secondItem="5F6-qi-Xno" secondAttribute="leading" id="wiP-Zk-GhO"/>
+                            <constraint firstItem="oJq-IJ-if3" firstAttribute="top" secondItem="5F6-qi-Xno" secondAttribute="top" constant="5" id="yGn-Ol-UfR"/>
+                            <constraint firstAttribute="bottom" secondItem="oJq-IJ-if3" secondAttribute="bottom" constant="5" id="zDW-lE-FCH"/>
+                            <constraint firstAttribute="trailing" secondItem="Bmj-Cg-zb8" secondAttribute="trailing" id="zrj-vh-81w"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="5F6-qi-Xno" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="IwP-Br-4XE"/>
+                <constraint firstItem="5F6-qi-Xno" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="VkB-4U-Y1C"/>
+                <constraint firstAttribute="bottom" secondItem="5F6-qi-Xno" secondAttribute="bottom" constant="5" id="Wpd-ZG-cAf"/>
+                <constraint firstItem="5F6-qi-Xno" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="e8S-H5-1t5"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="140" height="113"/>
+            <connections>
+                <outlet property="backImage" destination="Bmj-Cg-zb8" id="aO7-TR-N9m"/>
+                <outlet property="backView" destination="5F6-qi-Xno" id="sBS-Qi-AV1"/>
+                <outlet property="itemNameLbl" destination="oJq-IJ-if3" id="7A6-3D-3FF"/>
+            </connections>
+            <point key="canvasLocation" x="195.6521739130435" y="173.4375"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="buttonWhiteBg" width="142" height="51"/>
+    </resources>
+</document>

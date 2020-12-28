@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-SemiBold.otf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MenuCollectionViewCell" customModule="RestaurantApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="64" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="64" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mhG-Cs-4GG">
+                        <rect key="frame" x="0.0" y="0.0" width="64" height="50"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buttonBackImg" translatesAutoresizingMaskIntoConstraints="NO" id="Eov-fV-93n">
+                                <rect key="frame" x="0.0" y="0.0" width="64" height="50"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qmc-CN-VkB">
+                                <rect key="frame" x="8" y="14.5" width="48" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="xdF-uz-89P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="14"/>
+                                <color key="textColor" red="0.3411764705882353" green="0.39215686274509803" blue="0.48627450980392156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Qmc-CN-VkB" firstAttribute="centerY" secondItem="mhG-Cs-4GG" secondAttribute="centerY" id="JuD-ZF-nRi"/>
+                            <constraint firstItem="Eov-fV-93n" firstAttribute="leading" secondItem="mhG-Cs-4GG" secondAttribute="leading" id="Sex-ay-iHg"/>
+                            <constraint firstAttribute="bottom" secondItem="Eov-fV-93n" secondAttribute="bottom" id="WX2-zj-Qzq"/>
+                            <constraint firstAttribute="trailing" secondItem="Eov-fV-93n" secondAttribute="trailing" id="a7v-HV-mon"/>
+                            <constraint firstItem="Qmc-CN-VkB" firstAttribute="centerX" secondItem="mhG-Cs-4GG" secondAttribute="centerX" id="hKq-yu-PpJ"/>
+                            <constraint firstAttribute="height" constant="50" id="oLY-DM-vI5"/>
+                            <constraint firstAttribute="trailing" secondItem="Qmc-CN-VkB" secondAttribute="trailing" constant="8" id="pnT-u7-3pP"/>
+                            <constraint firstItem="Eov-fV-93n" firstAttribute="top" secondItem="mhG-Cs-4GG" secondAttribute="top" id="rBG-Ni-bCn"/>
+                            <constraint firstItem="Qmc-CN-VkB" firstAttribute="leading" secondItem="mhG-Cs-4GG" secondAttribute="leading" constant="8" id="t76-jz-bMU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="mhG-Cs-4GG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="1e1-M1-aDG"/>
+                <constraint firstItem="mhG-Cs-4GG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="BBr-xr-ssU"/>
+                <constraint firstAttribute="bottom" secondItem="mhG-Cs-4GG" secondAttribute="bottom" id="NRI-qP-7MN"/>
+                <constraint firstAttribute="trailing" secondItem="mhG-Cs-4GG" secondAttribute="trailing" id="Xqb-qW-hrz"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="64" height="52"/>
+            <connections>
+                <outlet property="backImg" destination="Eov-fV-93n" id="qek-vl-D2o"/>
+                <outlet property="backView" destination="mhG-Cs-4GG" id="EVJ-J6-gLr"/>
+                <outlet property="nameLbl" destination="Qmc-CN-VkB" id="7aj-zY-4q6"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="152.67857142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="buttonBackImg" width="142" height="51"/>
+    </resources>
+</document>

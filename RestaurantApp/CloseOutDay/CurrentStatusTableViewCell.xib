@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad12_9" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.otf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-SemiBold.otf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CurrentStatusTableViewCell" customModule="RestaurantApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="530" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="530" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bES-QV-ZIe">
+                        <rect key="frame" x="0.0" y="0.0" width="530" height="44"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="status_check" translatesAutoresizingMaskIntoConstraints="NO" id="2FT-J9-qqF">
+                                <rect key="frame" x="15" y="9.5" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="czA-dn-nuu"/>
+                                    <constraint firstAttribute="width" constant="25" id="zma-cb-x3L"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Unpaid cheque" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YaH-vP-6jQ">
+                                <rect key="frame" x="52" y="11.5" width="125" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="nd3-w0-WIb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="15"/>
+                                <color key="textColor" red="0.18431372549019609" green="0.24705882352941178" blue="0.36470588235294116" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJb-tk-vqa" customClass="CustomButton" customModule="RestaurantApp" customModuleProvider="target">
+                                <rect key="frame" x="430" y="7" width="80" height="30"/>
+                                <color key="backgroundColor" red="0.85490196078431369" green="0.89411764705882346" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3bx-et-xvV"/>
+                                    <constraint firstAttribute="width" constant="80" id="tkQ-cx-3Sn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="15"/>
+                                <state key="normal" title="View">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.23137254901960785" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="2FT-J9-qqF" firstAttribute="leading" secondItem="bES-QV-ZIe" secondAttribute="leading" constant="15" id="4wn-sm-P9t"/>
+                            <constraint firstAttribute="trailing" secondItem="IJb-tk-vqa" secondAttribute="trailing" constant="20" id="AO1-Gu-Iz2"/>
+                            <constraint firstItem="2FT-J9-qqF" firstAttribute="centerY" secondItem="bES-QV-ZIe" secondAttribute="centerY" id="BLR-aB-kso"/>
+                            <constraint firstItem="YaH-vP-6jQ" firstAttribute="leading" secondItem="2FT-J9-qqF" secondAttribute="trailing" constant="12" id="Uf7-XM-Agj"/>
+                            <constraint firstItem="YaH-vP-6jQ" firstAttribute="centerY" secondItem="bES-QV-ZIe" secondAttribute="centerY" id="fLu-n7-7L4"/>
+                            <constraint firstItem="IJb-tk-vqa" firstAttribute="centerY" secondItem="bES-QV-ZIe" secondAttribute="centerY" id="y7O-qe-53t"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bES-QV-ZIe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="BCL-1N-ie2"/>
+                    <constraint firstAttribute="trailing" secondItem="bES-QV-ZIe" secondAttribute="trailing" id="LF3-wW-daJ"/>
+                    <constraint firstAttribute="bottom" secondItem="bES-QV-ZIe" secondAttribute="bottom" id="TXO-K1-Rrk"/>
+                    <constraint firstItem="bES-QV-ZIe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Yyo-Dl-pSe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="statusImage" destination="2FT-J9-qqF" id="U2Y-ra-afl"/>
+                <outlet property="statusNameLabel" destination="YaH-vP-6jQ" id="sTJ-Ds-T3E"/>
+                <outlet property="viewButton" destination="IJb-tk-vqa" id="9vI-fi-BRN"/>
+            </connections>
+            <point key="canvasLocation" x="193.359375" y="150.65885797950219"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="status_check" width="25" height="25"/>
+    </resources>
+</document>

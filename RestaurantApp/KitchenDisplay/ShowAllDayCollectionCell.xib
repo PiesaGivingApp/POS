@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.otf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ShowAllDayCollectionCell" customModule="RestaurantApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="59"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="59"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QmK-hW-h21">
+                        <rect key="frame" x="5" y="5" width="290" height="49"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1b4-Pk-ei6">
+                                <rect key="frame" x="20" y="14.5" width="210" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Q1m-5M-Hj6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                                <color key="textColor" red="0.0039215686269999999" green="0.050980392159999999" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFK-EA-HEZ">
+                                <rect key="frame" x="245" y="14.5" width="30" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="ddt-Rk-NpT"/>
+                                    <constraint firstAttribute="width" constant="30" id="jHB-9h-vjr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                                <color key="textColor" red="0.0039215686269999999" green="0.050980392159999999" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="PFK-EA-HEZ" secondAttribute="trailing" constant="15" id="FE6-Mn-P9b"/>
+                            <constraint firstItem="PFK-EA-HEZ" firstAttribute="centerY" secondItem="QmK-hW-h21" secondAttribute="centerY" id="Tbs-iD-L5N"/>
+                            <constraint firstAttribute="width" constant="290" id="Ufb-C8-oQk"/>
+                            <constraint firstItem="PFK-EA-HEZ" firstAttribute="leading" secondItem="1b4-Pk-ei6" secondAttribute="trailing" constant="15" id="cBv-gE-Cgm"/>
+                            <constraint firstItem="1b4-Pk-ei6" firstAttribute="centerY" secondItem="QmK-hW-h21" secondAttribute="centerY" id="ccN-rG-Rxh"/>
+                            <constraint firstItem="1b4-Pk-ei6" firstAttribute="leading" secondItem="QmK-hW-h21" secondAttribute="leading" constant="20" id="zI7-KM-EIW"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="QmK-hW-h21" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="9Do-XZ-gg1"/>
+                <constraint firstAttribute="trailing" secondItem="QmK-hW-h21" secondAttribute="trailing" constant="5" id="fQ7-af-ded"/>
+                <constraint firstAttribute="bottom" secondItem="QmK-hW-h21" secondAttribute="bottom" constant="5" id="i4x-f4-WxL"/>
+                <constraint firstItem="QmK-hW-h21" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="l6y-4m-dMq"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="297" height="59"/>
+            <connections>
+                <outlet property="backView" destination="QmK-hW-h21" id="Nop-74-5Uk"/>
+                <outlet property="nameLbl" destination="1b4-Pk-ei6" id="Kbk-AH-fzj"/>
+                <outlet property="quantityLbl" destination="PFK-EA-HEZ" id="g4F-Nj-mXH"/>
+            </connections>
+            <point key="canvasLocation" x="310.86956521739131" y="153.01339285714286"/>
+        </collectionViewCell>
+    </objects>
+</document>
